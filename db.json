@@ -1,0 +1,45 @@
+{
+    "bg": "https://c.wallhere.com/photos/6f/a1/2560x1600_px_minimalism_The_Beatles-1294669.jpg!d",
+    "title": "Beatles Quiz",
+    "description": "Teste os seus conhecimentos sobre Beatles",
+    "questions": [
+      {
+        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "title": "Quem é o Beatle mais velho?",
+        "description": "Essa é pra aquecer",
+        "answer": 1,
+        "alternatives": [
+          "John Lennon",
+          "Ringo Starr",
+          "Paul McCartney",
+          "George Harrison"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "title": "Qual é o nome do primeiro álbum dos Beatles?",
+        "description": "Faz tempo hein haha",
+        "answer": 3,
+        "alternatives": [
+           "Twist and Shout",
+           "With the Beatles",
+           "A Hard Day's Night",
+           "Please Please Me"
+        ]
+      }
+    ],
+    "external": [
+      ""
+    ],
+    "theme": {
+      "colors": {
+        "primary": "#E67923",
+        "secondary": "#FA8D2D",
+        "mainBg": "#E6B89E",
+        "contrastText": "#000000",
+        "wrong": "#FF5722",
+        "success": "#4CAF50"
+      },
+      "borderRadius": "4px"
+    }
+  }
