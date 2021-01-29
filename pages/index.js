@@ -36,11 +36,9 @@ export default function Home() {
             }}
             >
               <Input
-                name=""
+                name="NomeDoUsuario"
                 // eslint-disable-next-line react/jsx-no-bind
-                onChange={function (e) {
-                  setName(e.target.value);
-                }}
+                onChange={(e) => setName(e.target.value)}
                 placeholder="Qual é o seu nome?"
                 value={name}
               />

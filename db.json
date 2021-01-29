@@ -4,7 +4,7 @@
     "description": "Teste os seus conhecimentos sobre Beatles",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "image": "https://i.pinimg.com/originals/cc/2b/aa/cc2baa5673ea6d97460beff2b647f233.gif",
         "title": "Quem é o Beatle mais velho?",
         "description": "Essa é pra aquecer",
         "answer": 1,
@@ -16,7 +16,7 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "image": "https://64.media.tumblr.com/tumblr_m4jkunGhvx1r0u98io1_500.gif",
         "title": "Qual é o nome do primeiro álbum dos Beatles?",
         "description": "Faz tempo hein haha",
         "answer": 3,
