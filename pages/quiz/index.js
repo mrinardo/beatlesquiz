@@ -2,14 +2,15 @@
 import React from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import GitHubCorner from '../src/components/GitHubCorner';
-import Button from '../src/components/Button';
-import AlternativesForm from '../src/components/AlternativesForm';
+import db from '../../db.json';
+import Widget from '../../src/components/Widget';
+import QuizLogo from '../../src/components/QuizLogo';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import GitHubCorner from '../../src/components/GitHubCorner';
+import Button from '../../src/components/Button';
+import AlternativesForm from '../../src/components/AlternativesForm';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
 
 function ResultWidget({ results }) {
   const router = useRouter();
@@ -33,6 +34,7 @@ function ResultWidget({ results }) {
             }
             return somatoria;
           }, 0)}
+          !
         </p>
         <ul>
           {results.map((result, index) => (
@@ -51,7 +53,7 @@ function ResultWidget({ results }) {
   );
 }
 
-function LoadingWidget() {
+function LoadingWidget({ title }) {
   return (
     <Widget>
       <Widget.Header>
@@ -59,7 +61,7 @@ function LoadingWidget() {
       </Widget.Header>
 
       <Widget.Content>
-        Beatles Quiz
+        {title}
       </Widget.Content>
     </Widget>
   );
@@ -79,7 +81,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
-        {/* <BackLinkArrow href="/" /> */}
+        <BackLinkArrow href="/" />
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>
@@ -127,7 +129,7 @@ function QuestionWidget({
                 data-status={isAnswerSubmitted && alternativeStatus}
               >
                 <input
-                  // style={{ display: 'none' }}
+                  style={{ display: 'none' }}
                   id={alternativeId}
                   name={questionId}
                   onChange={() => setSelectedAlternative(alternativeIndex)}
@@ -197,7 +199,7 @@ export default function QuizPage() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>Beatles Quiz - Imersão React Alura</title>
+        <title>{`${db.title} - Imersão React Alura`}</title>
         <meta property="og:image" content={db.bg} />
       </Head>
       <QuizContainer>
@@ -212,7 +214,7 @@ export default function QuizPage() {
           />
         )}
 
-        {screenState === screenStates.LOADING && <LoadingWidget />}
+        {screenState === screenStates.LOADING && <LoadingWidget title={db.title} />}
 
         {screenState === screenStates.RESULT && <ResultWidget results={results} />}
       </QuizContainer>

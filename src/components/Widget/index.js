@@ -62,6 +62,10 @@ Widget.Topic = styled.a`
   &:focus {
     opacity: .5;
   }
+  &[data-disabled="true"] {
+    opacity: .5;
+    cursor: not-allowed;;
+    }
 `;
 
 export default Widget;

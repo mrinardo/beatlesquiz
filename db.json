@@ -6,7 +6,7 @@
       {
         "image": "https://i.pinimg.com/originals/cc/2b/aa/cc2baa5673ea6d97460beff2b647f233.gif",
         "title": "Quem é o Beatle mais velho?",
-        "description": "Essa é pra aquecer",
+        "description": "Essa é pra aquecer...",
         "answer": 1,
         "alternatives": [
           "John Lennon",
@@ -18,7 +18,7 @@
       {
         "image": "https://64.media.tumblr.com/tumblr_m4jkunGhvx1r0u98io1_500.gif",
         "title": "Qual é o nome do primeiro álbum dos Beatles?",
-        "description": "Faz tempo hein haha",
+        "description": "Faz tempo hein haha...",
         "answer": 3,
         "alternatives": [
            "Twist and Shout",
@@ -26,10 +26,47 @@
            "A Hard Day's Night",
            "Please Please Me"
         ]
+      },
+      {
+        "image": "https://thumbs.gfycat.com/AmazingWideeyedLice-max-1mb.gif",
+        "title": "Quem toca bateria na gravação da música Dear Prudence?",
+        "description": "Vixi...",
+        "answer": 0,
+        "alternatives": [
+          "Paul McCartney",
+          "John Lennon",
+          "George Harrison",
+          "Ringo Starr"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/tumblr_lu3tppGmJZ1qi11hvo1_500.gif",
+        "title": "Quem canta a música Yellow Submarino?",
+        "description": "Todos nós vivemos...",
+        "answer": 2,
+        "alternatives": [
+          "George Harrison",
+          "Paul McCartney",
+          "Ringo Starr",
+          "John Lennon"
+        ]
+      },
+      {
+        "image": "https://media1.tenor.com/images/f653508db5ff5d209271cdd14611a711/tenor.gif?itemid=4422731",
+        "title": "Em que ano foi lançado o álbum Let It Be?",
+        "description": "Eu ainda não tinha nascido...",
+        "answer": 1,
+        "alternatives": [
+          "1971",
+          "1970",
+          "1969",
+          "1968"
+        ]
       }
     ],
     "external": [
-      ""
+      "https://aluraquiz-css.omariosouto.vercel.app/",
+      "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
     ],
     "theme": {
       "colors": {
